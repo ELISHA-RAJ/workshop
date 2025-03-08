@@ -34,7 +34,9 @@ const Checkout = () => {
       }
 
       try {
-        const response = await axios.post("http://localhost:5000/api/payment/create-payment-intent", {
+        const response = await axios.post("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/payment/create-payment-intent", {
           amount: totalPrice * 100,
           customerName,
           customerEmail,

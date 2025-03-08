@@ -11,7 +11,9 @@ export default function Home() {
     fetchProducts();
   },[])
   async function fetchProducts(){
-    await axios.get("http://localhost:5000/api/product")
+    await axios.get("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/product")
       .then((res)=>{
         console.log(res)
         setProducts(res.data)
@@ -27,7 +29,9 @@ export default function Home() {
       return 
     }
     try{
-      await axios.post("http://localhost:5000/api/cart/add",{productId},{
+      await axios.post("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/cart/add",{productId},{
         headers:{Authorization:`Bearer ${user.token}`}
       })
         .then((res)=>{

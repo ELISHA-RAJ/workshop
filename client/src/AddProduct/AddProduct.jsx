@@ -12,7 +12,9 @@ export default function AddProduct() {
     }
     function addProduct(e) {
         e.preventDefault()
-        axios.post("http://localhost:5000/api/product/add", formData, {
+        axios.post("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/product/add", formData, {
             headers: { Authorization: `Bearer ${user.token}` }
         })
             .then((res) => {

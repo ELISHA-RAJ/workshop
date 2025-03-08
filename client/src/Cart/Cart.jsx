@@ -10,7 +10,9 @@ export default function Cart() {
         fetchCartProducts()
     }, [])
     async function fetchCartProducts() {
-        await axios.get("http://localhost:5000/api/cart", {
+        await axios.get("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/cart", {
             headers: { Authorization: `Bearer ${user.token}` }
         })
             .then((res) => {
@@ -27,7 +29,9 @@ export default function Cart() {
     }
     async function removeFromCart(productId){
         try{
-            await axios.delete(`http://localhost:5000/api/cart/remove/${productId}`,{
+            await axios.delete(`Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/cart/remove/${productId}`,{
                 headers:{Authorization:`Bearer ${user.token}`}
             })
             .then((res)=>{

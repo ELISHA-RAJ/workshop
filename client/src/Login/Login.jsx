@@ -11,7 +11,9 @@ export default function Login() {
   }
   function handleLogin(e){
     e.preventDefault()
-    axios.post("http://localhost:5000/api/auth/login",formData)
+    axios.post("Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ELISHA RAJ/.ssh/id_rsa): cat ~/.ssh/id_rsa.pub
+Enter passphrase (empty for no passphrase):/api/auth/login",formData)
       .then((res)=>{
         console.log("login response",res)
         if(res.status===200){
